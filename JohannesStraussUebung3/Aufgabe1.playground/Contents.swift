@@ -87,7 +87,12 @@ class Mannschaft{
     }
     
     func gewinntSpielt() -> Bool{
-        return arc4random_uniform(2) == 0
+        if(arc4random_uniform(2) == 0){
+            print(self.getName() + " hat das Spiel gewonnen!")
+            return true
+        }
+        print(self.getName() + " hat das Spiel verloren!")
+        return false
     }
     
     func printMannschaft() {
@@ -110,3 +115,4 @@ feld.append(Spieler(vorname: "Gerd", nachname: "Müller", trikoNr: 3, position: 
 var bayern = Mannschaft(name: "Bayern", torwart: towart, feldSpieler: feld, tabellenPlatz: 5)
 
 bayern.printMannschaft()
+bayern.gewinntSpielt()
