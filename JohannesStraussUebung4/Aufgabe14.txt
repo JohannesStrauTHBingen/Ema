@@ -1,0 +1,19 @@
+SS17vmac16:Desktop student$ mkdir git
+SS17vmac16:Desktop student$ cd git/
+SS17vmac16:git student$ git init
+Initialized empty Git repository in /Users/student/Desktop/git/.git/
+SS17vmac16:git student$ echo "" > .gitignore
+SS17vmac16:git student$ git add HelloGit/
+SS17vmac16:git student$ git add .gitignore 
+SS17vmac16:git student$ git commit git commit -m "Git mit HelloGit angelegt"
+SS17vmac16:git student$ git commit -a
+SS17vmac16:git student$ git checkout -b newBranch
+SS17vmac16:git student$ git add HelloGit/
+SS17vmac16:git student$ git commit -m "print in viewDidLoad"
+SS17vmac16:git student$ git checkout master
+SS17vmac16:git student$ git commit -m "WillAppear implementiert didLoad entfernt"
+SS17vmac16:git student$ git merge newBranch
+SS17vmac16:git student$ git diff
+SS17vmac16:git student$ nano HelloGit/HelloGit/ViewController.swift
+SS17vmac16:git student$ git add HelloGit/
+SS17vmac16:git student$ git commit -m "MergeConflict Solved"
